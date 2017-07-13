@@ -1,5 +1,6 @@
 package com.example.bhavyesharma.jsonretrofit;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -39,7 +40,8 @@ public class MainActivity extends AppCompatActivity {
         postListView.setOnItemClickListener(new OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-            Object o=postListView.getItemAtPosition(i);
+                Intent intent=new Intent(MainActivity.this,PostComments.class);
+                intent.putExtra("position",)
             }
         });
     }
